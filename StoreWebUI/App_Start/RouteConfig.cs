@@ -15,8 +15,8 @@ namespace StoreWebUI
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Start", action = "Page", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{page}",
+                defaults: new { controller = "Start", action = "Page", page = UrlParameter.Optional }
             );
         }
     }

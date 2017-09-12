@@ -1,0 +1,27 @@
+﻿@model IEnumerable<StoreDomain.Entities.Book>
+
+@foreach (var book in Model)
+{
+    <div class="well">
+        <div class="row">
+            <div class="col-xs-10">
+                <h3>
+                    <strong>@book.Name</strong>
+                </h3>
+                <h4>
+                    <strong>@book.Author</strong>
+                </h4>
+            </div>
+            <div>
+                <h3>
+                    <strong class="pull-right label label-primary">
+                        @book.Price.ToString("# руб")
+                    </strong>
+                </h3>
+            </div>
+            <span class="lead">
+                @book.Description
+            </span>
+        </div>
+    </div>
+}

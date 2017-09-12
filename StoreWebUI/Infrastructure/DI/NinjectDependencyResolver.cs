@@ -8,7 +8,7 @@ using StoreDomain.Abstract;
 using StoreDomain.Concrete;
 using System.Data.Entity;
 
-namespace StoreWebUI.Infrastructure
+namespace StoreWebUI.DI.Infrastructure
 {
     public class NinjectDependencyResolver : IDependencyResolver
     {
