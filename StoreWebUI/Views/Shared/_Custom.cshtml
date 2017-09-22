@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Создание адаптивного сайта - ПРИМЕР</title>
+    <meta name="description" content="Создание адаптивного сайта" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="~/Content/font-awesome/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery-fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />@*Галерея и модальное окно*@
+    <link href="~/Content/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/fonts/fonts.css" rel="stylesheet" />
+    <link href="~/Content/Custom/main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav sel"><a class="nav" href="#">Хлеб</a></li>
+                <li class="nav"><a class="nav" href="#">Сладкое</a></li>
+                <li class="nav"><a class="nav" href="#">Отзывы</a></li>
+                <li class="nav"><a class="nav" href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <!--[if lt IE 9]>
+    <script src="~/Scripts/html5shiv/es5-shim.min.js"></script>
+    <script src="~/Scripts/html5shiv/html5shiv.min.js"></script>
+    <script src="~/Scripts/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="~/Scripts/respond/respond.min.js"></script>
+        <![endif]-->
+    <script src="~/Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="~/Scripts/jquery/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery-fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script src="~/Scripts/jquery-fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script src="~/Scripts/Waypoint/jquery.waypoints.min.js"></script>
+    <script src="~/Scripts/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Scripts/Custom/main.js"></script>
+    <!-- Yandex.Metrika counter --><!-- Yandex.Metrika counter -->
+    <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

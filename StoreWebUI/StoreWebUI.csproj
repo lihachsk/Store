@@ -100,6 +100,8 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -144,46 +146,116 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstarp\bootstrap-theme.css" />
+    <Content Include="Content\bootstarp\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstarp\bootstrap.css" />
+    <Content Include="Content\bootstarp\bootstrap.min.css" />
+    <Content Include="Content\font-awesome\font-awesome.css" />
+    <Content Include="Content\font-awesome\font-awesome.min.css" />
+    <Content Include="Content\fonts\fonts.css" />
+    <Content Include="Content\jquery-fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\Custom\main.css" />
+    <Content Include="Content\owl-carousel\ajax-loader.gif" />
+    <Content Include="Content\owl-carousel\owl.carousel.css" />
+    <Content Include="Content\owl-carousel\owl.carousel.min.css" />
+    <Content Include="Content\owl-carousel\owl.theme.default.css" />
+    <Content Include="Content\owl-carousel\owl.theme.default.min.css" />
+    <Content Include="Content\owl-carousel\owl.theme.green.css" />
+    <Content Include="Content\owl-carousel\owl.theme.green.min.css" />
+    <Content Include="Content\owl-carousel\owl.video.play.png" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Image\bg.jpg" />
     <Content Include="Image\loading_spinner.gif" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.1.1.js" />
-    <Content Include="Scripts\jquery-3.1.1.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.1.1.min.map" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\ScrollingPaget.js" />
+    <Content Include="Content\bootstarp\bootstrap.min.css.map" />
+    <Content Include="Content\bootstarp\bootstrap.css.map" />
+    <Content Include="Content\bootstarp\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstarp\bootstrap-theme.css.map" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Black.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Bold.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Heavy.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Light.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Medium.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Regular.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Semibold.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Thin.otf" />
+    <Content Include="fonts\SF-Display\SFUIDisplay-Ultralight.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Bold.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldG1.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldG2.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldG3.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldItalicG1.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldItalicG2.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-BoldItalicG3.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Heavy.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-HeavyItalic.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Italic.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-ItalicG1.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-ItalicG2.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-ItalicG3.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Light.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-LightItalic.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Medium.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-MediumItalic.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Regular.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-RegularG1.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-RegularG2.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-RegularG3.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-Semibold.otf" />
+    <Content Include="fonts\SF-Text\SFUIText-SemiboldItalic.otf" />
+    <None Include="Scripts\jquery\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="Scripts\Custom\main.js" />
+    <Content Include="Scripts\html5shiv\es5-shim.min.js" />
+    <Content Include="Scripts\html5shiv\html5shiv-printshiv.min.js" />
+    <Content Include="Scripts\html5shiv\html5shiv.min.js" />
+    <Content Include="Scripts\html5shiv\respond.min.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery\jquery-migrate-3.0.0.min.js" />
+    <None Include="Scripts\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Scripts\jquery-fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Scripts\jquery-fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\jquery-fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Scripts\jquery\jquery.validate.js" />
+    <Content Include="Scripts\jquery\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Custom\ScrollingPaget.js" />
+    <Content Include="Scripts\owl-carousel\owl.carousel.js" />
+    <Content Include="Scripts\owl-carousel\owl.carousel.min.js" />
+    <Content Include="Scripts\respond\respond.min.js" />
+    <Content Include="Scripts\Waypoint\jquery.waypoints.js" />
+    <Content Include="Scripts\Waypoint\jquery.waypoints.min.js" />
+    <Content Include="Scripts\Waypoint\noframework.waypoints.js" />
+    <Content Include="Scripts\Waypoint\noframework.waypoints.min.js" />
+    <Content Include="Scripts\Waypoint\waypoints.debug.js" />
+    <Content Include="Scripts\Waypoint\zepto.waypoints.js" />
+    <Content Include="Scripts\Waypoint\zepto.waypoints.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Start.cs" />
+    <Compile Include="Books.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\StartController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +277,10 @@
     <Content Include="Views\Start\_Books.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shared\_Custom.cshtml" />
+    <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -220,6 +296,9 @@
       <Project>{c02f9864-89df-4b57-a301-281e02810353}</Project>
       <Name>StoreDomain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
